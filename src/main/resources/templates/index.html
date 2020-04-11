@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎</title>
+    <link rel="stylesheet" href="/css/buju.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            margin: 10% auto;
+            width: 700px;
+            height: 550px;
+            background-color: lightblue;
+        }
+        .bt{
+            margin: 0 auto;
+            width: 700px;
+            height: 225px;
+            font-size: 128px;
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+            text-align: center;
+            line-height: 225px;
+            vertical-align: middle;
+        }
+        .bb{
+            margin: 0 auto;
+            width: 700px;
+            height: 225px;
+            font-size: 50px;
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+            line-height: 225px;
+            text-align: right;
+            vertical-align: middle;
+        }
+        @font-face{
+            font-family: kastlerFont;
+            src:url('/fonts/kastler.ttf'),
+            url('/fonts/kastler.eot'),
+            url('/fonts/kastler.woff'),
+            url('/fonts/kastler.svg');
+        }
+        .font-face{
+            font-family: kastlerFont,serif;
+
+        }
+    </style>
+    <script th:inline="javascript">
+        function toHome() {
+            window.location.href="/home"
+        }
+    </script>
+</head>
+<body>
+<div id="container">
+    <div id="main">
+        <div class="box">
+            <div class="bt font-face">
+                Hello world!
+            </div>
+            <div class="bb" onclick="toHome()">
+                Click here to continue!->
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div style="margin-top: 10px;padding-top: 50px;">
+            <h1 style="color: #f8f8f8">Copyright <strong>&copy;彭友聪 </strong>2020·04·11</h1>
+        </div>
+    </div>
+</div>
+</body>
+</html>
