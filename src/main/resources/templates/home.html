@@ -5,31 +5,54 @@
     <title>Home</title>
     <link rel="stylesheet" href="/css/buju.css">
     <style>
-        .maintain{
+        .maintain {
             width: 100%;
             height: 1000px;
         }
-        .content{
+
+        .content {
             float: left;
             width: 50%;
             height: 950px;
             margin-left: 50px;
-            margin-top:50px;
+            margin-top: 50px;
             border: 2px solid red;
             border-radius: 25px;
             box-shadow: 10px 10px 5px #888;
         }
-        .left-side{
+
+        .left-side {
             float: left;
             width: 25%;
             height: 950px;
             margin-left: 10px;
-            margin-top:50px;
+            margin-top: 50px;
             border: 2px solid lightblue;
             border-radius: 25px;
             box-shadow: 10px 10px 5px #888;
         }
 
+        .text-box {
+            margin: 50px auto;
+            text-align: justify;
+            text-indent: 4em;
+        }
+
+        table {
+            border: 1px solid black;
+        }
+
+        .tbh {
+            background-color: gray;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #EAF2D3;
+        }
+
+        tr:nth-child(even) {
+            background-color: #AAFFC3;
+        }
     </style>
 </head>
 <body>
@@ -65,7 +88,34 @@
     <div id="main">
         <div class="maintain">
             <div class="left-side">
-
+                <div class="text-box">
+                    <h2 style="text-align: center;">站主简介</h2>
+                    <p>姓名：彭友聪</p>
+                    <p>网名：御承扬</p>
+                    <p>性别：男</p>
+                    <p>博客地址：<a href="https://blog.csdn.net/qq_42896653">https://blog.csdn.net/qq_42896653</a></p>
+                    <p>邮箱：2923616405@qq.com</p>
+                    <p>职业：开发、运维</p>
+                    <p>接触过的编程语言如下：</p>
+                    <br>
+                    <div style="margin-left: 20px;">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td rowspan="3">能进行编程的：</td>
+                                <td>
+                                    C/C++
+                                </td>
+                            <tr>
+                                <td>Python</td>
+                            </tr>
+                            <tr>
+                                <td>Java</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
             <div class="content">
 
